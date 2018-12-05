@@ -22,21 +22,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      list: [{
-        id: '1001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1709/e4/e48857f2ce5e53a7a3.img.jpg_200x200_8ee069fe.jpg',
-        title: '远去的恐龙',
-        desc: '这个季节很适合去看看'
-      }, {
-        id: '1002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg',
-        title: '西山温泉',
-        desc: '夏季泡温泉对身体很好'
-
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
